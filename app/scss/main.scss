@@ -1,0 +1,16 @@
+// Config style
+@import 'config/mixin';
+@import 'config/variables';
+
+// Helper style
+@import 'helper/normalize';
+@import 'helper/formalize';
+@import 'helper/fonts';
+@import 'helper/links';
+@import 'helper/base';
+
+// Global style
+@import 'global/header';
+
+//Pages specific styles
+@import 'pages/home';
