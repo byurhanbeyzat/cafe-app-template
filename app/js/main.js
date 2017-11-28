@@ -5,3 +5,11 @@ $('.header-switch').on('click', function () {
     $('.header').addClass('menu-show')
   }
 })
+
+$('.drink-menu-slider').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  pageDots: false,
+  prevNextButtons: false
+});

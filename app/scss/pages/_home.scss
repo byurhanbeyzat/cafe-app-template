@@ -2,6 +2,7 @@
   margin-top: 20px;
 
   .wrapper {
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -9,7 +10,7 @@
   }
 
   .card {
-    width: 100%;
+    width: calc(100% - 20px);
     height: 185px;
     display: flex;
     position: relative;

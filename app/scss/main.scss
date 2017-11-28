@@ -5,12 +5,17 @@
 // Helper style
 @import 'helper/normalize';
 @import 'helper/formalize';
+@import 'helper/buttons';
 @import 'helper/fonts';
 @import 'helper/links';
 @import 'helper/base';
+
+// Plugins
+@import 'plugins/flickity';
 
 // Global style
 @import 'global/header';
 
 //Pages specific styles
 @import 'pages/home';
+@import 'pages/choose-drink';

@@ -1,6 +1,6 @@
-@mixin mq($width: "tablet") {
+@mixin mq($width: "mobile") {
   // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
+  @media (min-width: 360px) {
     @content
   }
 }

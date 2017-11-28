@@ -16,13 +16,13 @@ gulp.task('browser-sync', function() {
   });
 
   gulp.watch('./app/*.html', reload);
-  gulp.watch('./scss/**/*.scss', ['css']);
-  gulp.watch('./js/**/*.js', reload);
+  gulp.watch('./app/scss/**/*.scss', ['css']);
+  gulp.watch('./app/js/**/*.js', reload);
 });
 
 gulp.task('css', function() {
   return gulp.src('./app/scss/**/*.scss')
-  .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+  .pipe(sass().on('error', sass.logError))
   .pipe(prefix())
   .pipe(gulp.dest('./app/css'))
   .pipe(browserSync.stream())
