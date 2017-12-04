@@ -3,7 +3,7 @@ $header-height: 50px;
 .header {
   width: 100%;
   height: $header-height;
-  background-color: $c-white;
+  background: linear-gradient(45deg, rgba(104,75,241,1) 0%,rgba(125,82,248,1) 100%);
 
   .wrapper {
     height: 100%;
@@ -17,10 +17,18 @@ $header-height: 50px;
     left: 10px;
 
     .icon-menu {
-      width: 1em;
-      height: 1em;
       font-size: 20px;
-      color: #444444;
+      color: $c-white;
+    }
+  }
+
+  &-bag {
+    position: relative;
+    right: 10px;
+
+    .icon-shopping-bag {
+      font-size: 17px;
+      color: $c-white;
     }
   }
 
@@ -64,9 +72,9 @@ $header-height: 50px;
 
   &-title {
     width: 100%;
-    color: $c-gray;
+    color: $c-white;
     display: inline-flex;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }

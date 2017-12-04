@@ -675,8 +675,10 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-.button,
+.btn,
 button {
+  border: none;
+  outline: none;
   background-color: transparent; }
 
 .icon {
@@ -809,7 +811,7 @@ http://flickity.metafizzy.co
 .header {
   width: 100%;
   height: 50px;
-  background-color: #FFFFFF; }
+  background: linear-gradient(45deg, #684bf1 0%, #7d52f8 100%); }
   .header .wrapper {
     height: 100%;
     display: -webkit-box;
@@ -823,10 +825,14 @@ http://flickity.metafizzy.co
     position: relative;
     left: 10px; }
     .header-switch .icon-menu {
-      width: 1em;
-      height: 1em;
       font-size: 20px;
-      color: #444444; }
+      color: #FFFFFF; }
+  .header-bag {
+    position: relative;
+    right: 10px; }
+    .header-bag .icon-shopping-bag {
+      font-size: 17px;
+      color: #FFFFFF; }
   .header-menu {
     z-index: 1;
     display: -webkit-box;
@@ -870,14 +876,14 @@ http://flickity.metafizzy.co
         background-color: #eee; }
   .header-title {
     width: 100%;
-    color: #5a5b5d;
+    color: #FFFFFF;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 20px; }
+    margin-right: 10px; }
 
 .main {
   margin-top: 20px; }
@@ -991,11 +997,34 @@ http://flickity.metafizzy.co
       .main .drink-menu-slider .flickity-viewport {
         overflow: hidden; }
       .main .drink-menu-slider-item {
-        width: 140px;
-        height: 190px;
-        margin-right: 15px;
-        border: 1px solid #e8eef6;
+        width: 145px;
+        height: 200px;
+        position: relative;
+        margin-right: 10px;
+        border: 2px solid #e8eef6;
         border-radius: 4px; }
+        .main .drink-menu-slider-item .checkicon {
+          background: linear-gradient(45deg, #684bf1 0%, #7d52f8 100%);
+          -webkit-transition: .3s;
+          transition: .3s;
+          width: 18px;
+          height: 18px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          border-radius: 100%;
+          position: absolute;
+          top: 10px;
+          right: 10px; }
+          .main .drink-menu-slider-item .checkicon .icon-checkmark {
+            width: 10px;
+            color: #FFFFFF; }
         .main .drink-menu-slider-item .drink-image {
           width: 100%;
           height: 100%;
@@ -1038,13 +1067,18 @@ http://flickity.metafizzy.co
             font-size: 1em;
             font-weight: 400;
             color: #9aa8c1; }
+        .main .drink-menu-slider-item.select {
+          border: 2px solid #7d52f8;
+          border-radius: 4px; }
   .main .btn-choose {
-    position: absolute;
-    height: 44px;
     width: 150px;
+    height: 44px;
+    position: absolute;
     top: 350px;
     color: #FFFFFF;
     font-size: 1em;
     font-weight: 600;
+    border: none;
+    outline: none;
     border-radius: 22px;
     background: linear-gradient(45deg, #684bf1 0%, #7d52f8 100%); }

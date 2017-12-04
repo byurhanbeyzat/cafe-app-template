@@ -52,11 +52,31 @@
       }
 
       &-item {
-        width: 140px; 
-        height: 190px;
-        margin-right: 15px;
-        border: 1px solid $c-border;
+        width: 145px; 
+        height: 200px;
+        position: relative;
+        margin-right: 10px;
+        border: 2px solid $c-border;
         border-radius: $border-radius;
+
+        .checkicon {
+          background: $gradient;
+          transition: .3s;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 100%;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+
+          .icon-checkmark {
+            width: 10px;
+            color: $c-white;
+          }
+        }
 
         .drink-image {
           width: 100%;
@@ -100,19 +120,26 @@
             color: #9aa8c1;
           }
         }
+
+        &.select {
+          border: 2px solid $c-purple;
+          border-radius: $border-radius;
+        }
       }
     }
   }
 
   .btn-choose {
-    position: absolute;
-    height: $finger-size;
     width: 150px;
+    height: $finger-size;
+    position: absolute;
     top: 350px;
     color: $c-white;
     font-size: 1em;
     font-weight: 600;
+    border: none;
+    outline: none;
     border-radius: 22px; 
-    background: linear-gradient(45deg, rgba(104,75,241,1) 0%,rgba(125,82,248,1) 100%);
+    background: $gradient;
   }
 }
