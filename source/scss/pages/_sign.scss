@@ -1,0 +1,64 @@
+.main {
+  position: relative;
+
+  .wrapper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    position: absolute;
+    top: 50px;
+    width: 80%;
+    height: auto;
+    background-color: $c-white;
+    //box-shadow: 0px 8px 20px rgba($c-black, .1);
+    
+    form {
+      // width: 100%;
+      // padding: 1em;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 4em;
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      input {
+        margin-bottom: 2em;
+        padding-bottom: .8em;
+        color: $c-gray;
+        border: none;
+        border-bottom: 1px solid rgba($c-gray, .2);
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .btn-login {
+      position: relative;
+      left: 27%;
+      top: 30px;
+      width: 130px;
+    }
+
+    .sign-up {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 70px;
+      font-size: .95em; 
+    }
+  }
+}

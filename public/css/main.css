@@ -437,6 +437,16 @@ table {
 td {
   padding: 0; }
 
+.btn {
+  height: 44px;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+  background: linear-gradient(45deg, #684bf1 0%, #7d52f8 100%);
+  color: #FFFFFF; }
+
 /* cyrillic-ext */
 @font-face {
   font-family: 'Open Sans';
@@ -886,9 +896,260 @@ http://flickity.metafizzy.co
     margin-right: 10px; }
 
 .main {
+  position: relative; }
+  .main .wrapper {
+    width: 80%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .main .form {
+    position: absolute;
+    top: 50px;
+    width: 80%;
+    height: auto;
+    background-color: #FFFFFF; }
+    .main .form h3 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding-bottom: 4em; }
+    .main .form-group {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .main .form-group input {
+        margin-bottom: 2em;
+        padding-bottom: .8em;
+        color: #5a5b5d;
+        border: none;
+        border-bottom: 1px solid rgba(90, 91, 93, 0.2); }
+        .main .form-group input:focus {
+          outline: none; }
+    .main .form .btn-login {
+      position: relative;
+      left: 27%;
+      top: 30px;
+      width: 130px; }
+    .main .form .sign-up {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative;
+      top: 70px;
+      font-size: .95em; }
+
+.main {
+  position: relative; }
+  .main .wrapper {
+    width: 80%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .main .cart-item {
+    width: 90%;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1.5em;
+    -webkit-box-shadow: 0 7px 20px rgba(90, 91, 93, 0.1);
+            box-shadow: 0 7px 20px rgba(90, 91, 93, 0.1); }
+    .main .cart-item-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .main .cart-item-price {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .main .cart-item-quantity {
+      width: 100px;
+      height: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border: 1px solid rgba(194, 194, 194, 0.9);
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border-radius: 4px;
+      margin-left: 120px; }
+      .main .cart-item-quantity .reduce {
+        width: 30px;
+        height: 30px;
+        background-color: #c2c2c2;
+        border-radius: 4px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; }
+      .main .cart-item-quantity .quantity {
+        font-size: .9em; }
+      .main .cart-item-quantity .increase {
+        width: 30px;
+        height: 30px;
+        background-color: #c2c2c2;
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; }
+
+.main {
+  position: relative; }
+  .main .wrapper {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .main .drink-menu {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 5px; }
+    .main .drink-menu-slider {
+      width: 100%;
+      height: 100%; }
+      .main .drink-menu-slider .flickity-viewport {
+        overflow: hidden; }
+      .main .drink-menu-slider-item {
+        width: 145px;
+        height: 200px;
+        position: relative;
+        margin-right: 10px;
+        border: 2px solid #e8eef6;
+        border-radius: 4px; }
+        .main .drink-menu-slider-item .drink-image {
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          background: #FFFFFF center center no-repeat/cover; }
+          .main .drink-menu-slider-item .drink-image:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 4px; }
+        .main .drink-menu-slider-item .info {
+          width: 100%;
+          height: 70px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-color: #FFFFFF;
+          border-top: 1px solid #e8eef6;
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px; }
+          .main .drink-menu-slider-item .info-price {
+            color: #5e6063;
+            font-size: 1.1em;
+            font-weight: 800;
+            padding-bottom: 6px; }
+          .main .drink-menu-slider-item .info-name {
+            font-size: 1em;
+            font-weight: 400;
+            color: #9aa8c1; }
+        .main .drink-menu-slider-item.select {
+          border: 2px solid #7d52f8;
+          border-radius: 4px; }
+  .main .total-bar {
+    width: 90%;
+    height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+    top: 240px;
+    border-radius: 4px;
+    border: 1px solid #e8eef6; }
+    .main .total-bar-total {
+      color: #000000;
+      font-size: 1em;
+      font-weight: 700;
+      letter-spacing: 3px; }
+    .main .total-bar-price {
+      color: #000000;
+      font-size: 1.7em;
+      font-weight: 300;
+      padding-left: 80px; }
+  .main .btn-add {
+    width: 150px;
+    height: 44px;
+    position: absolute;
+    top: 350px;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    background: linear-gradient(45deg, #684bf1 0%, #7d52f8 100%); }
+
+.main {
   margin-top: 20px; }
   .main .wrapper {
-    width: 85%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -943,142 +1204,3 @@ http://flickity.metafizzy.co
       color: #FFFFFF;
       font-size: 1.5em;
       font-weight: 600; }
-
-.main {
-  position: relative; }
-  .main .wrapper {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .main .top-bar {
-    width: 90%;
-    height: 65px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    position: absolute;
-    top: 0px;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 5px 20px rgba(90, 91, 93, 0.1);
-            box-shadow: 0 5px 20px rgba(90, 91, 93, 0.1); }
-    .main .top-bar-title {
-      color: #5e6063;
-      font-size: 1.2em;
-      font-weight: 600;
-      padding-top: 10px;
-      padding-left: 75px;
-      margin-bottom: -12px; }
-    .main .top-bar-subtitle {
-      color: #9aa8c1;
-      font-size: .9em;
-      font-weight: 300;
-      padding-left: 77px; }
-  .main .drink-menu {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 100px; }
-    .main .drink-menu-slider {
-      width: 100%;
-      height: 100%; }
-      .main .drink-menu-slider .flickity-viewport {
-        overflow: hidden; }
-      .main .drink-menu-slider-item {
-        width: 145px;
-        height: 200px;
-        position: relative;
-        margin-right: 10px;
-        border: 2px solid #e8eef6;
-        border-radius: 4px; }
-        .main .drink-menu-slider-item .checkicon {
-          background: linear-gradient(45deg, #684bf1 0%, #7d52f8 100%);
-          -webkit-transition: .3s;
-          transition: .3s;
-          width: 18px;
-          height: 18px;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          border-radius: 100%;
-          position: absolute;
-          top: 10px;
-          right: 10px; }
-          .main .drink-menu-slider-item .checkicon .icon-checkmark {
-            width: 10px;
-            color: #FFFFFF; }
-        .main .drink-menu-slider-item .drink-image {
-          width: 100%;
-          height: 100%;
-          border-radius: 4px;
-          background: #FFFFFF center center no-repeat/cover; }
-          .main .drink-menu-slider-item .drink-image:before {
-            content: "";
-            width: 100%;
-            height: 100%;
-            border-radius: 4px; }
-        .main .drink-menu-slider-item .info {
-          width: 100%;
-          height: 70px;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          background-color: #FFFFFF;
-          border-top: 1px solid #e8eef6;
-          border-bottom-left-radius: 4px;
-          border-bottom-right-radius: 4px; }
-          .main .drink-menu-slider-item .info-price {
-            color: #5e6063;
-            font-size: 1.1em;
-            font-weight: 800;
-            padding-bottom: 6px; }
-          .main .drink-menu-slider-item .info-name {
-            font-size: 1em;
-            font-weight: 400;
-            color: #9aa8c1; }
-        .main .drink-menu-slider-item.select {
-          border: 2px solid #7d52f8;
-          border-radius: 4px; }
-  .main .btn-choose {
-    width: 150px;
-    height: 44px;
-    position: absolute;
-    top: 350px;
-    color: #FFFFFF;
-    font-size: 1em;
-    font-weight: 600;
-    border: none;
-    outline: none;
-    border-radius: 22px;
-    background: linear-gradient(45deg, #684bf1 0%, #7d52f8 100%); }

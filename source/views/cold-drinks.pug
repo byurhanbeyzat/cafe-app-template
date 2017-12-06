@@ -1,0 +1,31 @@
+extends global/master
+
+block content
+  .wrapper
+    .drink-menu
+      .drink-menu-slider
+        .drink-menu-slider-item
+          .drink-image(style='background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9c5GR_ru2Tt3mhzjHTGiHlTCNbCM_pBxeL3rE_ePSEbtrx_m0);')
+          .info
+            h4.info-price $2
+            h4.info-name Coca Cola
+        .drink-menu-slider-item
+          .drink-image(style='background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMUHin7Z9p7f_AuMSobAlRtliwmqsKgHDftbkS_valvrbxag_q);')
+          .info
+            h4.info-price $2.34
+            h4.info-name Fanta
+        .drink-menu-slider-item
+          .drink-image(style='background-image: url(https://www.yourtrolley.in/environment/cache/images/300_300_productGfx_bf5d0ace2c75166341b4a3d095ebbebc.jpg);')
+          .info
+            h4.info-price $1.10
+            h4.info-name Limea
+        .drink-menu-slider-item
+          .drink-image(style='background-image: url(https://www.pure.co.uk/wp-content/uploads/2017-09-07_SH87_AGC_Small-291-copy-1024x928.jpg);')
+          .info
+            h4.info-price $3.29
+            h4.info-name Pure
+    .total-bar
+      h3.total-bar-title TOTAL: 
+      h4.total-bar-price $7.80
+      
+    button.btn.btn-add(type='button') Add to card

@@ -2,9 +2,6 @@ extends global/master
 
 block content
   .wrapper
-    .top-bar
-      h3.top-bar-title You want coffee?
-      p.top-bar-subtitle Choose your coffee.
     .drink-menu
       .drink-menu-slider
         .drink-menu-slider-item
@@ -57,4 +54,9 @@ block content
           .info
             h4.info-price $2.18
             h4.info-name Cappuccino
-    button.btn.btn-choose(type='button') Continue
+    
+    .total-bar
+      h3.total-bar-total TOTAL: 
+      h4.total-bar-price $7.80
+
+    button.btn.btn-add(type='button') Add to card

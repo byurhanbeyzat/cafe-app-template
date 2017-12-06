@@ -16,6 +16,7 @@ $('.drink-menu-slider-item').on('click', function() {
   }
 })
 
+
 // Slider function
 $('.drink-menu-slider').flickity({
   prevNextButtons: false,

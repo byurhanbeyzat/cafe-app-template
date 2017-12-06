@@ -1,0 +1,18 @@
+extends global/sign-master
+
+block content
+  .wrapper
+    .form
+      h3 Login to your account
+      form(action="")
+        .form-group
+          input(type='text' name='email' placeholder='Email')
+        
+        .form-group
+          input(type='password' name='password' placeholder='Password')
+      
+      button.btn.btn-login(type='button')
+        a(href="categories.html") Login
+
+      p.sign-up 
+        a(href="register.html") You don't have an account? Sign up
