@@ -11,7 +11,7 @@ gulp.task('browser-sync', function() {
   browserSync.init({
     notify: false,
     server: {
-      baseDir: './public'
+      baseDir: './build'
     }
   });
 
@@ -23,7 +23,7 @@ gulp.task('browser-sync', function() {
 gulp.task('html', function() {
   return gulp.src('./source/views/*.pug')
     .pipe(pug())
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('./build'))
     .on('end', reload);
 });
 
@@ -31,13 +31,13 @@ gulp.task('css', function() {
   return gulp.src('./source/scss/**/*.scss')
   .pipe(sass().on('error', sass.logError))
   .pipe(prefix())
-  .pipe(gulp.dest('./public/css'))
+  .pipe(gulp.dest('./build/css'))
   .pipe(browserSync.stream());
 });
 
 gulp.task('js', function() {
   return gulp.src('./source/js/**/*.js')
-  .pipe(gulp.dest('./public/js'))
+  .pipe(gulp.dest('./build/js'))
   .on('end', reload);
 });
 
