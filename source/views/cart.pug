@@ -4,8 +4,29 @@ block content
   .wrapper
     .cart-item
       .cart-item-img
-      .cart-item-title Coca Cola
-      .cart-item-price $2
+      .cart-item-details
+        .cart-item-title Coca Cola
+        .cart-item-price $2.20
+      .cart-item-quantity 
+        button.reduce &minus;
+        p.quantity 2
+        button.increase &plus;
+
+    .cart-item
+      .cart-item-img
+      .cart-item-details
+        .cart-item-title Frappucino
+        .cart-item-price $3.14
+      .cart-item-quantity 
+        button.reduce &minus;
+        p.quantity 2
+        button.increase &plus;
+
+    .cart-item
+      .cart-item-img
+      .cart-item-details
+        .cart-item-title Heineken
+        .cart-item-price $2.90
       .cart-item-quantity 
         button.reduce &minus;
         p.quantity 1
@@ -13,9 +34,17 @@ block content
 
     .cart-item
       .cart-item-img
-      .cart-item-title Coca Cola
-      .cart-item-price $2
+      .cart-item-details
+        .cart-item-title Corona
+        .cart-item-price $2.45
       .cart-item-quantity 
         button.reduce &minus;
         p.quantity 1
         button.increase &plus;
+    
+    .checkout-total-bar
+      h3.total-bar-title TOTAL: 
+      h4.total-bar-price $10.69
+
+    button.btn.btn-pay(type='button')
+      a(href="categories.html") Go and pay

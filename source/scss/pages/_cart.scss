@@ -16,17 +16,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5em;
-    box-shadow: 0 7px 20px rgba($c-gray, .1);
+    margin-bottom: 1.15em;
+    border-radius: $border-radius;
+    border: 1px solid rgba($c-border, 1);
 
-    &-title {
-      display: flex;
-      
+    &.is-expanded {
+      height: 280px;
+      padding-bottom: 210px;
     }
 
-    &-price {
-      align-items: center;
-      justify-content: space-around;
+    &-details {
+      padding-left: 10px;
+      width: 30%;
     }
 
     &-quantity {
@@ -38,7 +39,7 @@
       justify-content: space-between;
       border-radius: $border-radius;
       margin-left: 120px; 
-
+      
       .reduce {
         width: 30px;
         height: 30px;
@@ -46,7 +47,6 @@
         border-radius: $border-radius;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        
       }
 
       .quantity {
@@ -60,10 +60,25 @@
         border-radius: $border-radius;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        
-        
       }
-      
     }
+  }
+
+  .checkout-total-bar {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    //position: absolute;
+    top: 355px;
+    border-radius: $border-radius;
+    border: 1px solid rgba($c-border, 1);
+  }
+
+  .btn-pay {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 25px;
   }
 }

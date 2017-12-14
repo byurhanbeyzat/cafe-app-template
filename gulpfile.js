@@ -29,7 +29,7 @@ gulp.task('html', function() {
 
 gulp.task('css', function() {
   return gulp.src('./source/scss/**/*.scss')
-  .pipe(sass().on('error', sass.logError))
+  .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
   .pipe(prefix())
   .pipe(gulp.dest('./build/css'))
   .pipe(browserSync.stream());

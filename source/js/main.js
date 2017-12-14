@@ -16,6 +16,13 @@ $('.drink-menu-slider-item').on('click', function() {
   }
 })
 
+$('.cart-item').on('click', function() {
+  if ($(this).is('.is-expanded')) {
+    $(this).removeClass('is-expanded')
+  } else {
+    $(this).addClass('is-expanded')
+  }
+})
 
 // Slider function
 $('.drink-menu-slider').flickity({
@@ -24,4 +31,6 @@ $('.drink-menu-slider').flickity({
   pageDots: false,
   contain: true
 })
+
+
 
